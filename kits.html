@@ -9,6 +9,9 @@
 </head>
 <body class="bg-white text-gray-900">
   
+  <!-- Skip Navigation -->
+  <a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-gray-900 text-white px-4 py-2 rounded z-50">Skip to main content</a>
+  
   <!-- Navbar -->
   <header class="bg-white border-b border-gray-200 px-4 py-4">
     <div class="max-w-6xl mx-auto">
@@ -17,18 +20,18 @@
           <img src="./assets/images/Logo.svg" alt="Bath Cloth Nappy Library Logo" class="h-10 md:h-12 w-auto">
           <span class="text-xl md:text-2xl font-light text-gray-900">Bath Cloth Nappy Library</span>
         </a>
-        <nav class="flex flex-wrap gap-4 md:gap-8">
-          <a href="index.html" class="text-gray-600 hover:text-gray-900 transition-colors font-light text-sm md:text-base">Home</a>
-          <a href="about.html" class="text-gray-600 hover:text-gray-900 transition-colors font-light text-sm md:text-base">About</a>
-          <a href="kits.html" class="text-gray-900 font-light text-sm md:text-base">Hire Kits</a>
-          <a href="contact.html" class="text-gray-600 hover:text-gray-900 transition-colors font-light text-sm md:text-base">Contact</a>
+        <nav class="flex flex-wrap gap-4 md:gap-8" aria-label="Main navigation">
+          <a href="index.html" class="text-gray-600 hover:text-gray-900 transition-colors font-light text-sm md:text-base focus:outline-none focus:ring-2 focus:ring-gray-900 focus:ring-offset-2 rounded px-1">Home</a>
+          <a href="about.html" class="text-gray-600 hover:text-gray-900 transition-colors font-light text-sm md:text-base focus:outline-none focus:ring-2 focus:ring-gray-900 focus:ring-offset-2 rounded px-1">About</a>
+          <a href="kits.html" class="text-gray-900 font-light text-sm md:text-base focus:outline-none focus:ring-2 focus:ring-gray-900 focus:ring-offset-2 rounded px-1">Hire Kits</a>
+          <a href="contact.html" class="text-gray-600 hover:text-gray-900 transition-colors font-light text-sm md:text-base focus:outline-none focus:ring-2 focus:ring-gray-900 focus:ring-offset-2 rounded px-1">Contact</a>
         </nav>
       </div>
     </div>
   </header>
 
   <!-- Main Content -->
-  <main class="p-10">
+  <main id="main-content" class="p-10">
     <div class="max-w-4xl mx-auto">
       <h1 class="text-6xl font-thin mb-16 text-gray-900 tracking-tight">Hire Kits</h1>
       
@@ -48,7 +51,7 @@
             <li>Access to support team</li>
           </ul>
           <div class="text-right">
-            <a href="contact.html" class="inline-block border border-gray-900 text-gray-900 px-8 py-3 font-light hover:bg-gray-900 hover:text-white transition-colors tracking-wide">Book Newborn Kit</a>
+            <a href="contact.html" class="inline-block border border-gray-900 text-gray-900 px-8 py-3 font-light hover:bg-gray-900 hover:text-white transition-colors tracking-wide focus:outline-none focus:ring-2 focus:ring-gray-900 focus:ring-offset-2 rounded">Book Newborn Kit</a>
           </div>
         </div>
 
@@ -65,7 +68,7 @@
             <li>Access to support team</li>
           </ul>
           <div class="text-right">
-            <a href="contact.html" class="inline-block border border-gray-900 text-gray-900 px-8 py-3 font-light hover:bg-gray-900 hover:text-white transition-colors tracking-wide">Book Birth-to-Potty Kit</a>
+            <a href="contact.html" class="inline-block border border-gray-900 text-gray-900 px-8 py-3 font-light hover:bg-gray-900 hover:text-white transition-colors tracking-wide focus:outline-none focus:ring-2 focus:ring-gray-900 focus:ring-offset-2 rounded">Book Birth-to-Potty Kit</a>
           </div>
         </div>
       </div>
@@ -94,19 +97,19 @@
       </section>
 
       <!-- FAQ -->
-      <section>
-        <h2 class="text-3xl font-bold mb-6">Frequently Asked Questions</h2>
-        <div class="space-y-4">
-          <div class="bg-gray-100 rounded-lg p-6">
+      <section aria-labelledby="faq-heading">
+        <h2 id="faq-heading" class="text-3xl font-bold mb-6">Frequently Asked Questions</h2>
+        <div class="space-y-4" role="list">
+          <div class="bg-gray-100 rounded-lg p-6" role="listitem">
             <h3 class="text-xl font-semibold mb-3 text-gray-800">How long can I keep a kit?</h3>
             <p class="text-gray-700">Newborn kits can be hired for as long as your baby fits the nappies, if you are using them! </p>
             <p class="text-gray-700">For the Birth-to-Potty kit, we recommend hiring for 2 weeks. This gives you enough time to try different nappies and see what works best for your baby.</p>
           </div>
-          <div class="bg-gray-100 rounded-lg p-6">
+          <div class="bg-gray-100 rounded-lg p-6" role="listitem">
             <h3 class="text-xl font-semibold mb-3 text-gray-800">What if my baby doesn't like them?</h3>
             <p class="text-gray-700">No problem! That's exactly why we offer hire kits. You can try them risk-free and return them if they're not working for your family.</p>
           </div>
-          <div class="bg-gray-100 rounded-lg p-6">
+          <div class="bg-gray-100 rounded-lg p-6" role="listitem">
             <h3 class="text-xl font-semibold mb-3 text-gray-800">Do I need to wash them before returning?</h3>
             <p class="text-gray-700">Yes, please return the nappies clean and dry. We'll provide washing instructions and can give advice if you need help.</p>
           </div>

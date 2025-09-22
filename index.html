@@ -9,6 +9,9 @@
 </head>
 <body class="bg-white text-gray-900">
   
+  <!-- Skip Navigation -->
+  <a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-gray-900 text-white px-4 py-2 rounded z-50">Skip to main content</a>
+  
   <!-- Navbar -->
   <header class="bg-white border-b border-gray-200 px-4 py-4">
     <div class="max-w-6xl mx-auto">
@@ -17,18 +20,19 @@
           <img src="./assets/images/Logo.svg" alt="Bath Cloth Nappy Library Logo" class="h-10 md:h-12 w-auto">
           <span class="text-xl md:text-2xl font-light text-gray-900">Bath Cloth Nappy Library</span>
         </a>
-        <nav class="flex flex-wrap gap-4 md:gap-8">
-          <a href="index.html" class="text-gray-600 hover:text-gray-900 transition-colors font-light text-sm md:text-base">Home</a>
-          <a href="about.html" class="text-gray-600 hover:text-gray-900 transition-colors font-light text-sm md:text-base">About</a>
-          <a href="kits.html" class="text-gray-600 hover:text-gray-900 transition-colors font-light text-sm md:text-base">Hire Kits</a>
-          <a href="contact.html" class="text-gray-600 hover:text-gray-900 transition-colors font-light text-sm md:text-base">Contact</a>
+        <nav class="flex flex-wrap gap-4 md:gap-8" aria-label="Main navigation">
+          <a href="index.html" class="text-gray-900 font-light text-sm md:text-base focus:outline-none focus:ring-2 focus:ring-gray-900 focus:ring-offset-2 rounded px-1">Home</a>
+          <a href="about.html" class="text-gray-600 hover:text-gray-900 transition-colors font-light text-sm md:text-base focus:outline-none focus:ring-2 focus:ring-gray-900 focus:ring-offset-2 rounded px-1">About</a>
+          <a href="kits.html" class="text-gray-600 hover:text-gray-900 transition-colors font-light text-sm md:text-base focus:outline-none focus:ring-2 focus:ring-gray-900 focus:ring-offset-2 rounded px-1">Hire Kits</a>
+          <a href="contact.html" class="text-gray-600 hover:text-gray-900 transition-colors font-light text-sm md:text-base focus:outline-none focus:ring-2 focus:ring-gray-900 focus:ring-offset-2 rounded px-1">Contact</a>
         </nav>
       </div>
     </div>
   </header>
 
   <!-- Hero Section -->
-  <section class="relative min-h-[80vh] bg-gray-50 flex items-center overflow-hidden">
+  <main id="main-content">
+    <section class="relative min-h-[80vh] bg-gray-50 flex items-center overflow-hidden">
     <!-- Header Image Background -->
     <div class="absolute inset-0 w-full h-full">
       <img src="./assets/images/BCNL_Header.jpg" alt="Bath Cloth Nappy Library Community" class="w-full h-full object-cover object-center">
@@ -40,7 +44,7 @@
       <div class="max-w-4xl mx-auto">
         <h1 class="text-4xl md:text-6xl font-thin mb-6 md:mb-8 text-gray-900 tracking-tight">Welcome to Bath Cloth Nappy Library</h1>
         <p class="text-xl py-8 text-gray-600 font-light leading-relaxed">We're here to help you explore the world of reusable nappies with confidence and ease. Whether you're just starting out or looking to try something new, we provide everything you need to make an informed decision.</p>
-        <a href="kits.html" class="inline-block bg-gray-900 text-white px-12 py-4 text-lg font-light hover:bg-gray-800 transition-colors tracking-wide">Get Started Today</a>
+        <a href="kits.html" class="inline-block bg-gray-900 text-white px-12 py-4 text-lg font-light hover:bg-gray-800 transition-colors tracking-wide focus:outline-none focus:ring-2 focus:ring-gray-900 focus:ring-offset-2 rounded">Get Started Today</a>
       </div>
     </div>
   </section>
@@ -56,7 +60,7 @@
           <h3 class="text-3xl font-light text-gray-900 mb-6 tracking-wide">Newborn Kit</h3>
           <p class="text-lg mb-8 text-gray-600 font-light leading-relaxed">Perfect for parents of little ones aged 0-6 months. This kit includes a range of reusable nappies designed to fit your baby snugly during their first months.</p>
           <div class="text-right">
-            <a href="kits.html" class="inline-block border border-gray-900 text-gray-900 px-8 py-3 font-light hover:bg-gray-900 hover:text-white transition-colors tracking-wide">Learn more about the Newborn Kit</a>
+            <a href="kits.html" class="inline-block border border-gray-900 text-gray-900 px-8 py-3 font-light hover:bg-gray-900 hover:text-white transition-colors tracking-wide focus:outline-none focus:ring-2 focus:ring-gray-900 focus:ring-offset-2 rounded">Learn more about the Newborn Kit</a>
           </div>
         </div>
 
@@ -64,7 +68,7 @@
           <h3 class="text-3xl font-light text-gray-900 mb-6 tracking-wide">Birth-to-Potty Kit</h3>
           <p class="text-lg mb-8 text-gray-600 font-light leading-relaxed">Designed for babies 6+ months, this kit features adjustable nappies that grow with your child and can be used until potty training.</p>
           <div class="text-right">
-            <a href="kits.html" class="inline-block border border-gray-900 text-gray-900 px-8 py-3 font-light hover:bg-gray-900 hover:text-white transition-colors tracking-wide">Discover the Birth-to-Potty Kit</a>
+            <a href="kits.html" class="inline-block border border-gray-900 text-gray-900 px-8 py-3 font-light hover:bg-gray-900 hover:text-white transition-colors tracking-wide focus:outline-none focus:ring-2 focus:ring-gray-900 focus:ring-offset-2 rounded">Discover the Birth-to-Potty Kit</a>
           </div>
         </div>
       </div>
@@ -102,11 +106,12 @@
       <h2 class="text-5xl font-thin mb-12 tracking-tight">Get Started Today</h2>
       <p class="text-xl mb-12 font-light text-gray-300">Ready to give cloth nappies a go?</p>
       <div class="space-y-6 mb-12">
-        <p class="text-lg font-light">📧 Contact Us: <a href="mailto:bathclothnappylibrary@gmail.com" class="underline hover:text-gray-300 transition-colors">bathclothnappylibrary@gmail.com</a></p>
+        <p class="text-lg font-light">📧 Contact Us: <a href="mailto:bathclothnappylibrary@gmail.com" class="underline hover:text-gray-300 transition-colors focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-900 rounded">bathclothnappylibrary@gmail.com</a></p>
       </div>
       <p class="text-lg font-light text-gray-300">Join our community of eco-conscious families and make the switch to reusable nappies today</p>
     </div>
   </section>
+  </main>
 
   <!-- Footer -->
   <footer class="bg-white border-t border-gray-200 py-12">
